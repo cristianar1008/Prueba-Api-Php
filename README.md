@@ -16,6 +16,21 @@ Esta API permite realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) 
 
 ---
 
+## Comando para iniciar
+
+Para iniciar el servidor local, utiliza el siguiente comando:
+
+```bash
+php -S localhost:8000 -t public
+```
+---
+
+## Token Bearer
+
+Bearer 0922bc21f1f75019a9a4bc899844f2436ca0c05e55420a83abd7c80c8c6fe8f8
+
+---
+
 ## Endpoints
 
 ### **GET /users**
