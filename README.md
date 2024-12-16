@@ -18,7 +18,7 @@ Esta API permite realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) 
 
 ## Comando para iniciar
 
-Para iniciar el servidor local, utiliza el siguiente comando:
+Para iniciar el servidor local, utiliza el siguiente comando en la carpeta raíz del proyecto:
 
 ```bash
 php -S localhost:8000 -t public
@@ -33,28 +33,6 @@ Bearer 0922bc21f1f75019a9a4bc899844f2436ca0c05e55420a83abd7c80c8c6fe8f8
 
 ## Endpoints
 
-### **[GET /users](http://localhost:8000/users)**
+Servidor local: http://localhost:8000/
 
-Obtiene la lista de todos los usuarios.
-
-**Respuesta:**
-
-```json
-[
-    {
-        "id": 1,
-        "name": "Juan Perez",
-        "email": "juan.perez@example.com",
-        "phone": "1234567890",
-        "address": "Calle 123",
-        "cc": "123456789"
-    },
-    {
-        "id": 2,
-        "name": "Ana Lopez",
-        "email": "ana.lopez@example.com",
-        "phone": "9876543210",
-        "address": "Avenida 456",
-        "cc": "987654321"
-    }
-]
+Se adjunta Coleccion en Postman para su testeo

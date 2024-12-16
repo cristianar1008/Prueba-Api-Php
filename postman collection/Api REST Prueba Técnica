@@ -1,0 +1,203 @@
+{
+    "info": {
+        "_postman_id": "d89f2409-3e16-41f4-b874-20ced1cf1786",
+        "name": "Api REST Prueba Técnica",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Registrar Usuario",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:8000/users",
+                    "path": [
+                        "users"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n    \"name\": \"Juan Pérez\",\n    \"email\": \"juan.peez@example.com\",\n    \"phone\": \"300123457\",\n    \"address\": \"Calle Falsa 123, Bogotá\",\n    \"password\": \"miContraseñaSegura12\",\n    \"cc\": \"12345678\"\n}\n\n"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "Bearer 0922bc21f1f75019a9a4bc899844f2436ca0c05e55420a83abd7c80c8c6fe8f8",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Lista de Usuarios",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8000/users",
+                    "path": [
+                        "users"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "Bearer 0922bc21f1f75019a9a4bc899844f2436ca0c05e55420a83abd7c80c8c6fe8f8",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Lista de Usuarios por Id",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8000/users/3",
+                    "path": [
+                        "users",
+                        "3"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "Bearer 0922bc21f1f75019a9a4bc899844f2436ca0c05e55420a83abd7c80c8c6fe8f8",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Actualización de Usuario",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:8000/users/3",
+                    "path": [
+                        "users",
+                        "3"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n    \"name\": \"Juanita Pérez\",\n    \"email\": \"juana.peez@example.com\",\n    \"phone\": \"500123457\",\n    \"address\": \"Avenida Falsa 123, Bogotá\",\n    \"password\": \"miContraseñaNOSegura12\",\n    \"cc\": \"12345678\"\n}\n"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "Bearer 0922bc21f1f75019a9a4bc899844f2436ca0c05e55420a83abd7c80c8c6fe8f8",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Actualización especifica (Patch) de Usuario",
+            "request": {
+                "method": "PATCH",
+                "url": {
+                    "raw": "http://localhost:8000/users/3",
+                    "path": [
+                        "users",
+                        "3"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"Juliana\"\n}"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "Bearer 0922bc21f1f75019a9a4bc899844f2436ca0c05e55420a83abd7c80c8c6fe8f8",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Eliminación de Usuario",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:8000/users/4",
+                    "path": [
+                        "users",
+                        "4"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "Bearer 0922bc21f1f75019a9a4bc899844f2436ca0c05e55420a83abd7c80c8c6fe8f8",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
