@@ -35,4 +35,4 @@ Bearer 0922bc21f1f75019a9a4bc899844f2436ca0c05e55420a83abd7c80c8c6fe8f8
 
 Servidor local: http://localhost:8000/
 
-Se adjunta Coleccion en Postman para su testeo
+Se adjunta colección en Postman para su prueba.
